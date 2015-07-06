@@ -8,6 +8,11 @@ router.get('/', function(req, res) {
   res.render('index', { title: 'Quiz' });
 });
 
+/* GET authors*/
+router.get('/authors', function(req, res){
+	res.render('authors', { title: 'Quiz' });
+});
+
 //Rutas para preguntas y respuestas mediante GET
 router.get('/quizes/question', quizController.question);
 router.get('/quizes/answer', quizController.answer);
